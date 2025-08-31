@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+header {
+  margin: 23px 0 107px 42px;
+}
+
+.menu-header {
+  color: #17233d;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.875px;
+  margin: 0 36px 0 0;
+  text-decoration: none;
+}
+
+.button-header {
+  width: 124px;
+  height: 37px;
+  border-radius: 6px;
+  border: 1px solid #4cb538;
+  background: #6fbf44;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.image-logo {
+  width: 575px;
+  height: 475px;
+  display: inline-block;
+  margin: 0 96.83px 0 121px;
+}
+
+section {
+  display: inline-block;
+}
+
+section h1 {
+  width: 582px;
+  color: #161a49;
+  font-size: 62px;
+  font-weight: 700;
+  line-height: 82px;
+  letter-spacing: 0.596px;
+  margin: 0 0 47px 0;
+}
+
+section p {
+  width: 493px;
+  color: #4b505a;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 33px;
+  letter-spacing: 0.5px;
+  margin: 0 0 55px 0;
+}
+
+.button-section {
+  border: none;
+  background: transparent;
+  color: #6FBF44;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+@media (max-width: 1379px) {
+  .image-logo {
+  width: 475px;
+  height: 375px;
+  margin-left: 81px;
+}
+
+section h1 {
+  width: 472px;
+  font-size: 47px;
+  line-height: 72px;
+}
+
+section p {
+  width: 383px;
+  font-size: 14px;
+  line-height: 20px;
+}
+}
+
+@media (max-width: 1129px) {
+  /* some com o menu */
+  .menu-header {
+    display: none;
+  }
+
+    header {
+    display: flex;
+    justify-content: flex-end; /* botão vai pro canto direito */
+    align-items: center;
+    margin: 23px 42px 107px 42px;
+  }
+  
+  /* organiza main como coluna */
+  main {
+    display: flex;
+    flex-direction: column-reverse; /* section em cima, imagem embaixo */
+    align-items: center;    /* centraliza tudo */
+    text-align: center;     /* centraliza textos */
+  }
+
+  section {
+    margin-bottom: 40px; /* espaço entre texto e imagem */
+  }
+
+  .image-logo {
+    margin: 0;        /* remove margin lateral */
+    width: 80%;       /* deixa a imagem mais adaptada */
+    height: auto;     /* mantém proporção */
+    margin-top: 40px
+  }
+
+  section h1 {
+    width: auto;      /* ocupa toda largura do container */
+    font-size: 36px;  /* tamanho reduzido p/ mobile */
+    line-height: 48px;
+  }
+
+  section p {
+    width: auto;
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
